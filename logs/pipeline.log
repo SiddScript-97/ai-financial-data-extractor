@@ -1,0 +1,34 @@
+2026-05-04 07:33:40,571  INFO      =================================================================
+2026-05-04 07:33:40,571  INFO        AI FINANCIAL DATA EXTRACTION PIPELINE — START
+2026-05-04 07:33:40,571  INFO      =================================================================
+2026-05-04 07:33:40,572  INFO      ─────────────────────────────────────────────────────────────────
+2026-05-04 07:33:40,572  INFO      STEP 1 — LOAD UNSTRUCTURED TEXT RECORDS
+2026-05-04 07:33:40,572  INFO        Loaded 12 text records from sample_texts.json
+2026-05-04 07:33:40,572  INFO      ─────────────────────────────────────────────────────────────────
+2026-05-04 07:33:40,572  INFO      STEP 2 — LLM-BASED ENTITY EXTRACTION
+2026-05-04 07:33:40,572  INFO        ⚡ DEMO MODE — using mock LLM (no API key required)
+2026-05-04 07:33:40,572  INFO        [ 1] PaySwift               | Series A       | $   12,000,000 | conf=0.97
+2026-05-04 07:33:40,572  INFO        [ 2] HealthAI               | Series B       | $   21,686,747 | conf=0.93
+2026-05-04 07:33:40,572  INFO        [ 3] SkillUp                | Seed           | $      800,000 | conf=0.88
+2026-05-04 07:33:40,572  INFO        [ 4] AgriTech India         | Series C       | $   45,000,000 | conf=0.96
+2026-05-04 07:33:40,572  INFO        [ 5] TrackIt                | Series D       | $  220,000,000 | conf=0.98
+2026-05-04 07:33:40,572  INFO        [ 6] GreenLeaf Energy       | Bridge         | $   30,000,000 | conf=0.90
+2026-05-04 07:33:40,572  INFO        [ 7] DataGuard              | Pre-Series A   | $    3,500,000 | conf=0.94
+2026-05-04 07:33:40,573  INFO        [ 8] NanoMed                | Series A       | $    9,638,554 | conf=0.91
+2026-05-04 07:33:40,573  INFO        [ 9] WealthBot              | Series B       | $   18,000,000 | conf=0.95
+2026-05-04 07:33:40,573  INFO        [10] FreightX               | Series B       | $   55,000,000 | conf=0.92
+2026-05-04 07:33:40,573  INFO        [11] EduSpark               | Pre-Series A   | $    6,000,000 | conf=0.89
+2026-05-04 07:33:40,573  INFO        [12] RetailBot              | Series C       | $   40,000,000 | conf=0.87
+2026-05-04 07:33:40,573  INFO        Extraction complete: 12 OK / 0 errors
+2026-05-04 07:33:40,573  INFO        Raw extractions saved → /home/claude/ai_financial_extractor/output/raw_extractions.json
+2026-05-04 07:33:40,573  INFO      ─────────────────────────────────────────────────────────────────
+2026-05-04 07:33:40,573  INFO      STEP 3 — LOAD TO SQLITE
+2026-05-04 07:33:40,580  INFO        Inserted 12 rows; 0 errors
+2026-05-04 07:33:40,580  INFO      ─────────────────────────────────────────────────────────────────
+2026-05-04 07:33:40,580  INFO      STEP 4 — ANALYSIS & INSIGHTS
+2026-05-04 07:33:40,592  INFO      ─────────────────────────────────────────────────────────────────
+2026-05-04 07:33:40,592  INFO      STEP 5 — EXPORT
+2026-05-04 07:33:40,597  INFO        Exported 12 rows → /home/claude/ai_financial_extractor/output/extracted_deals.csv
+2026-05-04 07:33:40,597  INFO      ─────────────────────────────────────────────────────────────────
+2026-05-04 07:33:40,597  INFO        Pipeline COMPLETE in 0.03s
+2026-05-04 07:33:40,597  INFO      =================================================================
